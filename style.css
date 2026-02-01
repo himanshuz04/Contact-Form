@@ -1,0 +1,341 @@
+* {
+    margin: 0;* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.contact-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #7171a3 0%, #af95c9 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-wrapper {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.optional {
+    color: #95a5a6;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover {
+    border-color: #bbb;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    max-height: 300px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+input.error,
+textarea.error {
+    border-color: #e74c3c;
+}
+
+.submit-btn {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+}
+
+.submit-btn:hover::before {
+    left: 100%;
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.success-message {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    border-radius: 6px;
+    padding: 15px 20px;
+    color: #155724;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    animation: slideIn 0.5s ease-out;
+}
+
+
+/* Mobile Styles - Media Query for devices 768px and below */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .form-wrapper {
+        padding: 25px 20px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .form-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        gap: 15px;
+    }
+
+    label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 10px 12px;
+        font-size: 16px; /* Prevents zoom on focus in iOS */
+        border-radius: 5px;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+}
+
+/* Extra small devices - Media Query for devices 480px and below */
+@media (max-width: 480px) {
+    .form-wrapper {
+        padding: 20px 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .contact-form {
+        gap: 12px;
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+    .error-message {
+        font-size: 0.8rem;
+    }
+}
