@@ -1,4 +1,4 @@
-A modern, responsive Contact Me form built using HTML, CSS, and Vanilla JavaScript, featuring real-time input validation and seamless email delivery via EmailJS — no backend required.
+A modern, responsive Contact Me form built using HTML, CSS, and JavaScript, featuring real-time input validation and seamless email delivery via EmailJS
 
 <b>✨ Features</b>
 
