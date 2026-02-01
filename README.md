@@ -1,6 +1,6 @@
 A modern, responsive Contact Me form built using HTML, CSS, and Vanilla JavaScript, featuring real-time input validation and seamless email delivery via EmailJS — no backend required.
 
-✨ Features
+<b>✨ Features</b>
 
 ✅ Clean & responsive UI
 🔍 Real-time form validation with user-friendly error messages
@@ -11,7 +11,7 @@ A modern, responsive Contact Me form built using HTML, CSS, and Vanilla JavaScri
 📱 Mobile-friendly design
 
 
-🛠 Tech Stack
+<b>🛠 Tech Stack</b>
 
 HTML5
 CSS3
@@ -25,6 +25,6 @@ Client-side validation checks input fields
 On successful validation, EmailJS sends the message to your email
 User receives instant success feedback
 
-📌 Use Case
+<b>📌 Use Case</b>
 
 Perfect for portfolio websites, personal projects, or landing pages where you want a professional contact form without building a backend.
